@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        Poppins: ["Poppins", "sans-serif"],
+                        Lato: ["Lato", "sans-serif"],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <nav class="w-screen h-20 border-b-2 flex items-center px-10 font-Poppins">
+        <img src="img/book.svg" alt="">
+        <a href="dashboard.html" class=" font-bold text-2xl ml-1">Perpustakaan Kita</a>
+        <div class="m-auto w-2/3 p-2 border flex items-center justify-between rounded-lg text-gray-500">Cari Buku <img
+                src="img/search.svg" alt=""></div>
+        <a class="font-bold text-lg" href="about.html">Tentang Kita</a>
+    </nav>
+</body>
+
+</html>
