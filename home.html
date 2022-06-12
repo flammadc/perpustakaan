@@ -5,41 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        Noto: ["Noto Serif ", "serif"],
-                        Lato: ["Lato", "sans-serif"],
-                        PT: ["PT Serif", "serif"],
-                    },
-                }
-            }
-        }
-    </script>
-    <style>
-        .shadowLeft {
-            box-shadow: -4px 0px 4px 0px rgba(0, 0, 0, 0.26);
-        }
-
-        .shadowCard {
-            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.26);
-        }
-    </style>
-
+    <link rel="icon" href="img/book.svg">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <nav class="w-full h-[100px] px-20 flex items-center justify-between">
-        <a class="flex items-center gap-2" href="#"><img src="img/book.svg" alt="">
+    <nav class="w-full h-[100px] px-20 flex items-center justify-between border">
+        <a class="flex items-center gap-2" href="home.html"><img src="img/book.svg" alt="">
             <h1 class="font-Noto text-4xl font-semibold">Perpustakaan Kita</h1>
         </a>
         <div class="font-PT flex gap-10">
@@ -73,7 +52,10 @@
                 elit.
                 Excepturi,
                 quibusdam.</p>
-            <button class="w-[200px] h-[50px] border border-black mt-8">READ MORE</button>
+            <form action="home.html">
+                <button class="w-[200px] h-[50px] border border-black mt-8">READ MORE</button>
+            </form>
+
         </div>
     </section>
 
@@ -86,31 +68,31 @@
         </div>
 
         <div class="flex gap-24">
-            <div class="flex flex-col items-center">
+            <a href="detail.html" class="flex flex-col items-center">
                 <img class="w-[150px] h-[223px] shadowCard" src="img/bumi-cover.jpg" alt="">
                 <h1 class="font-Noto text-2xl mt-2">Bumi</h1>
                 <p class="font-Lato text-sm font-light mt-1 text-[#808080]">Tere Liye</p>
-            </div>
-            <div class="flex flex-col items-center">
+            </a>
+            <a href="detail.html" class="flex flex-col items-center">
                 <img class="w-[150px] h-[223px] shadowCard" src="img/bulan-cover.jpg" alt="">
                 <h1 class="font-Noto text-2xl mt-2">Bulan</h1>
                 <p class="font-Lato text-sm font-light mt-1 text-[#808080]">Tere Liye</p>
-            </div>
-            <div class="flex flex-col items-center">
+            </a>
+            <a href="detail.html" class="flex flex-col items-center">
                 <img class="w-[150px] h-[223px] shadowCard" src="img/matahari-cover.jpg" alt="">
                 <h1 class="font-Noto text-2xl mt-2">Matahari</h1>
                 <p class="font-Lato text-sm font-light mt-1 text-[#808080]">Tere Liye</p>
-            </div>
-            <div class="flex flex-col items-center">
+            </a>
+            <a href="detail.html" class="flex flex-col items-center">
                 <img class="w-[150px] h-[223px] shadowCard" src="img/bintang-cover.jpg" alt="">
                 <h1 class="font-Noto text-2xl mt-2">Bintang</h1>
                 <p class="font-Lato text-sm font-light mt-1 text-[#808080]">Tere Liye</p>
-            </div>
-            <div class="flex flex-col items-center">
+            </a>
+            <a href="detail.html" class="flex flex-col items-center">
                 <img class="w-[150px] h-[223px] shadowCard" src="img/komet-cover.jpg" alt="">
                 <h1 class="font-Noto text-2xl mt-2">Komet</h1>
                 <p class="font-Lato text-sm font-light mt-1 text-[#808080]">Tere Liye</p>
-            </div>
+            </a>
         </div>
     </section>
 
@@ -129,48 +111,37 @@
         </div>
 
         <div class="flex gap-24">
-            <div class="flex flex-col items-center">
+            <a href="detail.html" class="flex flex-col items-center">
                 <img class="w-[150px] h-[223px] shadowCard" src="img/bumi-cover.jpg" alt="">
                 <h1 class="font-Noto text-2xl mt-2">Bumi</h1>
                 <p class="font-Lato text-sm font-light mt-1 text-[#808080]">Tere Liye</p>
-            </div>
-            <div class="flex flex-col items-center">
+            </a>
+            <a href="detail.html" class="flex flex-col items-center">
                 <img class="w-[150px] h-[223px] shadowCard" src="img/bulan-cover.jpg" alt="">
                 <h1 class="font-Noto text-2xl mt-2">Bulan</h1>
                 <p class="font-Lato text-sm font-light mt-1 text-[#808080]">Tere Liye</p>
-            </div>
-            <div class="flex flex-col items-center">
+            </a>
+            <a href="detail.html" class="flex flex-col items-center">
                 <img class="w-[150px] h-[223px] shadowCard" src="img/matahari-cover.jpg" alt="">
                 <h1 class="font-Noto text-2xl mt-2">Matahari</h1>
                 <p class="font-Lato text-sm font-light mt-1 text-[#808080]">Tere Liye</p>
-            </div>
-            <div class="flex flex-col items-center">
+            </a>
+            <a href="detail.html" class="flex flex-col items-center">
                 <img class="w-[150px] h-[223px] shadowCard" src="img/bintang-cover.jpg" alt="">
                 <h1 class="font-Noto text-2xl mt-2">Bintang</h1>
                 <p class="font-Lato text-sm font-light mt-1 text-[#808080]">Tere Liye</p>
-            </div>
-            <div class="flex flex-col items-center">
+            </a>
+            <a href="detail.html" class="flex flex-col items-center">
                 <img class="w-[150px] h-[223px] shadowCard" src="img/komet-cover.jpg" alt="">
                 <h1 class="font-Noto text-2xl mt-2">Komet</h1>
                 <p class="font-Lato text-sm font-light mt-1 text-[#808080]">Tere Liye</p>
-            </div>
+            </a>
         </div>
     </section>
 
-    <footer class="h-20 bg-[#eaeaea] flex items-center justify-center font-mono text-lg">made with ♥ by Kita.</footer>
-    <script>
-        let searchbar = document.querySelector(".searchbar")
-        let closeBtn = document.querySelector(".closeBtn")
-        let searchBtn = document.querySelector(".searchBtn")
-
-        searchBtn.addEventListener('click', function () {
-            searchbar.classList.toggle("hidden");
-        })
-
-        closeBtn.addEventListener('click', function () {
-            searchbar.classList.toggle("hidden");
-        })
-    </script>
+    <footer class="h-20 bg-[#eaeaea] flex items-center justify-center font-mono text-lg">made with ♥ by Kita.
+    </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
