@@ -44,16 +44,21 @@
 
 
     <div class="flex w-full justify-center p-14 gap-5">
-        <div class="flex flex-col gap-4 ">
-            <textarea class="p-2 w-[521px] h-[150px] bg-[#F5F1ED] resize-none outline-0 font-Lato font-light text-base"
-                type="text" placeholder="Message..."></textarea>
-            <div class="flex justify-between">
-                <input class="w-[250px] h-[50px] bg-[#F5F1ED] outline-0 px-5" type="text" placeholder="Your Name*"
-                    required>
-                <input class="w-[250px] h-[50px] bg-[#F5F1ED] outline-0 px-5" type="text" placeholder="Your Email*"
-                    required>
+        <form action="#">
+            <div class="flex flex-col gap-4 ">
+                <textarea
+                    class="p-5 w-[521px] h-[150px] bg-[#F5F1ED] resize-none outline-0 font-Lato font-light text-base"
+                    type="text" placeholder="Message..."></textarea>
+                <div class="flex justify-between">
+                    <input class="w-[250px] h-[50px] bg-[#F5F1ED] outline-0 px-5 font-Lato font-light text-base"
+                        type="text" placeholder="Your Name*">
+                    <input class="w-[250px] h-[50px] bg-[#F5F1ED] outline-0 px-5 font-Lato font-light text-base"
+                        type="email" placeholder="Your Email*">
+                </div>
+                <button
+                    class="w-[100px] h-[50px] font-Lato font-light text-base text-[#343434] justify-self-start border border-[#343434] tracking-wider">SEND</button>
             </div>
-        </div>
+        </form>
         <div class="">
             <h1 class="font-Noto text-4xl">Hubungi Kita</h1>
             <hr class="w-[100px]  border-black mt-5">
@@ -74,6 +79,9 @@
 
         </div>
     </div>
+
+    <footer class="mt-14 h-20 bg-[#eaeaea] flex items-center justify-center font-mono text-lg">made with ♥ by Kita.
+    </footer>
     <script src="script.js"></script>
 </body>
 
