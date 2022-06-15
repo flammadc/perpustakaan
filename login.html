@@ -1,30 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-
+    <link rel="icon" href="img/book.svg">
+    <link rel="stylesheet" href="style.css">
 </head>
+<body class="flex justify-center w-full bg-[#F5F1ED]">
+    <div class="w-[500px] h-[500px] py-10 mt-24 shadowBox bg-white flex flex-col items-center">
+        <div class="flex items-center gap-2">
+            <img src="img/book.svg" alt="">
+            <h1 class="font-Noto text-4xl font-semibold">Perpustakaan Kita</h1>
+        </div>
 
-<body>
-    <div class="w-[500px] h-[500px] border-4 m-auto mt-20">
-        <h1 class="text-center font-bold text-4xl mt-8">Log in</h1>
-        <hr class="m-auto mt-4 border-2 w-48">
-        <form class="mt-5 flex flex-col items-center gap-4" action="dashboard.html">
-            <input class="w-56 p-2 border block rounded" type="text" placeholder="Email">
-            <input class="w-56 p-2 border block rounded" type="password" placeholder="Password">
-            <button class="w-56 p-3 bg-black text-white font-semibold text-xl rounded">Log in</button>
-        </form>
+        <form action="home.html">
+        <div class="mt-14 flex flex-col gap-5">
+        <div class="flex items-center gap-1 w-[332px] h-[50px] border-b-[1px] border-[#343434] py-2 px-3 font-Lato text-lg text-[#343434]">
+            <label for="username"><img src="img/user.svg" alt=""></label>
+            <input class="w-auto outline-0" type="text" placeholder="Username" id="username">
+        </div>
+        <div class="flex items-center gap-1 w-[332px] h-[50px] border-b-[1px] border-[#343434] py-2 px-3 font-Lato text-lg text-[#343434]">
+            <label for="password"><img src="img/password.svg" alt=""></label>
+            <input class="w-auto outline-0" type="password" placeholder="Password" id="password">
+        </div>
+        <button class="w-[332px] h-[50px] bg-[#343434] font-Lato text-lg font-bold text-white">Log In</button>
+        
     </div>
-</body>
+</form>
+    
 
+    </div>
+    
+    <script src="script.js"></script>
+</body>
 </html>
