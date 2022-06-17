@@ -1,101 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="img/book.svg" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <nav
-      class="w-full h-[100px] px-20 flex items-center justify-between border"
-    >
-      <a class="flex items-center gap-2" href="home.html"
-        ><img src="img/book.svg" alt="" />
-        <h1 class="font-Noto text-4xl font-semibold">Perpustakaan Kita</h1>
-      </a>
-      <div class="font-PT flex gap-10">
-        <a href="home.html" class="underline underline-offset-4">HOME</a>
-        <a href="about.html" class="hover:underline underline-offset-4"
-          >ABOUT</a
-        >
-        <a href="contact.html" class="hover:underline underline-offset-4"
-          >CONTACT</a
-        >
-        <button class="searchBtn"><img src="img/search.svg" alt="" /></button>
-      </div>
-    </nav>
-    <div
-      class="w-full h-[100px] px-20 border flex items-center justify-between searchbar hidden transition ease-in duration-300"
-    >
-      <form action="search.html">
-        <div class="flex gap-2">
-          <img src="img/search.svg" alt="" />
-          <input class="focus:outline-none" type="text" placeholder="Search" />
-        </div>
-      </form>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" href="img/book.svg" />
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-      <button class="closeBtn"><img src="img/close.svg" alt="" /></button>
+<body>
+  <nav class="w-full h-[100px] px-20 flex items-center justify-between border">
+    <a class="flex items-center gap-2" href="home.html"><img src="img/book.svg" alt="" />
+      <h1 class="font-Noto text-4xl font-semibold">Perpustakaan Kita</h1>
+    </a>
+    <div class="font-PT flex gap-10">
+      <a href="home.html" class="hover:underline underline-offset-4">HOME</a>
+      <a href="about.html" class="underline underline-offset-4">ABOUT</a>
+      <a href="contact.html" class="hover:underline underline-offset-4">CONTACT</a>
+      <button class="searchBtn"><img src="img/search.svg" alt="" /></button>
     </div>
-
-    <div class="p-14 w-full flex flex-col items-center">
-      <h1 class="font-Noto text-[64px]">Tentang Kita</h1>
-      <hr class="w-[100px]  border-black mt-7" />
-      <p class="w-[700px] font-Lato text-2xl text-center mt-7">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mauris
-        tincidunt pretium consequat molestie mi, laoreet mattis. Nibh maecenas
-        sed sed tincidunt commodo malesuada sit. Pellentesque in molestie
-        laoreet in non mauris elit. Egestas aliquet etiam quis volutpat ipsum
-        neque dui, arcu vitae. Dolor, nibh vel vestibulum aliquet mattis
-        potenti.
-      </p>
-    </div>
-
-    <section class="w-full p-14 flex justify-center items-center bg-[#F5F1ED]">
-      <div class="flex gap-24">
-        <div class="flex flex-col items-center gap-2">
-          <div
-            class="bg-[url('img/developer.png')] w-[200px] h-[250px] shadowCard"
-          ></div>
-          <p class="font-Lato text-2xl">Developer</p>
-        </div>
-        <div class="flex flex-col items-center gap-2">
-          <div
-            class="bg-[url('img/assistant.png')] w-[200px] h-[250px] shadowCard"
-          ></div>
-          <p class="font-Lato text-2xl">Assistant</p>
-        </div>
-        <div class="flex flex-col items-center gap-2">
-          <div
-            class="bg-[url('img/secretary.png')] w-[200px] h-[250px] shadowCard"
-          ></div>
-          <p class="font-Lato text-2xl">Secretary</p>
-        </div>
-        <div class="flex flex-col items-center gap-2">
-          <div
-            class="bg-[url('img/junior.png')] w-[200px] h-[250px] shadowCard"
-          ></div>
-          <p class="font-Lato text-2xl">Junior</p>
-        </div>
+  </nav>
+  <div
+    class="w-full h-[100px] px-20 border flex items-center justify-between searchbar hidden transition ease-in duration-300">
+    <form action="search.html">
+      <div class="flex gap-2">
+        <img src="img/search.svg" alt="" />
+        <input class="focus:outline-none" type="text" placeholder="Search" />
       </div>
-    </section>
+    </form>
 
-    <footer
-      class="mt-24 h-20 bg-[#eaeaea] flex items-center justify-center font-mono text-lg"
-    >
-      made with ♥ by Kita.
-    </footer>
+    <button class="closeBtn"><img src="img/close.svg" alt="" /></button>
+  </div>
 
-    <script src="script.js"></script>
-  </body>
+  <div class="p-14 w-full flex flex-col items-center">
+    <h1 class="font-Noto text-[64px]">Tentang Kita</h1>
+    <hr class="w-[100px]  border-black mt-7" />
+    <p class="w-[700px] font-Lato text-2xl text-center mt-7">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mauris
+      tincidunt pretium consequat molestie mi, laoreet mattis. Nibh maecenas
+      sed sed tincidunt commodo malesuada sit. Pellentesque in molestie
+      laoreet in non mauris elit. Egestas aliquet etiam quis volutpat ipsum
+      neque dui, arcu vitae. Dolor, nibh vel vestibulum aliquet mattis
+      potenti.
+    </p>
+  </div>
+
+  <section class="w-full p-14 flex justify-center items-center bg-[#F5F1ED]">
+    <div class="flex gap-24">
+      <div class="flex flex-col items-center gap-2">
+        <div class="bg-[url('img/developer.png')] w-[200px] h-[250px] shadowCard"></div>
+        <p class="font-Lato text-2xl">Developer</p>
+      </div>
+      <div class="flex flex-col items-center gap-2">
+        <div class="bg-[url('img/assistant.png')] w-[200px] h-[250px] shadowCard"></div>
+        <p class="font-Lato text-2xl">Assistant</p>
+      </div>
+      <div class="flex flex-col items-center gap-2">
+        <div class="bg-[url('img/secretary.png')] w-[200px] h-[250px] shadowCard"></div>
+        <p class="font-Lato text-2xl">Secretary</p>
+      </div>
+      <div class="flex flex-col items-center gap-2">
+        <div class="bg-[url('img/junior.png')] w-[200px] h-[250px] shadowCard"></div>
+        <p class="font-Lato text-2xl">Junior</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="mt-24 h-20 bg-[#eaeaea] flex items-center justify-center font-mono text-lg">
+    made with ♥ by Kita.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
 </html>

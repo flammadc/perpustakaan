@@ -1,118 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="img/book.svg" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <nav
-      class="w-full h-[100px] px-20 flex items-center justify-between border"
-    >
-      <a class="flex items-center gap-2" href="home.html"
-        ><img src="img/book.svg" alt="" />
-        <h1 class="font-Noto text-4xl font-semibold">Perpustakaan Kita</h1>
-      </a>
-      <div class="font-PT flex gap-10">
-        <a href="home.html" class="underline underline-offset-4">HOME</a>
-        <a href="about.html" class="hover:underline underline-offset-4"
-          >ABOUT</a
-        >
-        <a href="contact.html" class="hover:underline underline-offset-4"
-          >CONTACT</a
-        >
-        <button class="searchBtn"><img src="img/search.svg" alt="" /></button>
-      </div>
-    </nav>
-    <div
-      class="w-full h-[100px] px-20 border flex items-center justify-between searchbar hidden transition ease-in duration-300"
-    >
-      <form action="search.html">
-        <div class="flex gap-2">
-          <img src="img/search.svg" alt="" />
-          <input class="focus:outline-none" type="text" placeholder="Search" />
-        </div>
-      </form>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" href="img/book.svg" />
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-      <button class="closeBtn"><img src="img/close.svg" alt="" /></button>
+<body>
+  <nav class="w-full h-[100px] px-20 flex items-center justify-between border">
+    <a class="flex items-center gap-2" href="home.html"><img src="img/book.svg" alt="" />
+      <h1 class="font-Noto text-4xl font-semibold">Perpustakaan Kita</h1>
+    </a>
+    <div class="font-PT flex gap-10">
+      <a href="home.html" class="hover:underline underline-offset-4">HOME</a>
+      <a href="about.html" class="hover:underline underline-offset-4">ABOUT</a>
+      <a href="contact.html" class="underline underline-offset-4">CONTACT</a>
+      <button class="searchBtn"><img src="img/search.svg" alt="" /></button>
     </div>
+  </nav>
+  <div
+    class="w-full h-[100px] px-20 border flex items-center justify-between searchbar hidden transition ease-in duration-300">
+    <form action="search.html">
+      <div class="flex gap-2">
+        <img src="img/search.svg" alt="" />
+        <input class="focus:outline-none" type="text" placeholder="Search" />
+      </div>
+    </form>
 
-    <iframe
-      class="w-full"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.6450944064286!2d106.83211851530447!3d-6.17823956226093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f4330fc1f097%3A0x380210b0f3ed4996!2sVocational%20High%20School%20State%202%20of%20Central%20Jakarta!5e0!3m2!1sen!2sid!4v1655107682676!5m2!1sen!2sid"
-      width="1440"
-      height="500"
-      style="border:0;"
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"
-    ></iframe>
+    <button class="closeBtn"><img src="img/close.svg" alt="" /></button>
+  </div>
 
-    <div class="flex w-full justify-center p-14 gap-5">
-      <form action="#">
-        <div class="flex flex-col gap-4 ">
-          <textarea
-            class="p-5 w-[521px] h-[150px] bg-[#F5F1ED] resize-none outline-0 font-Lato font-light text-base"
-            type="text"
-            placeholder="Message..."
-          ></textarea>
-          <div class="flex justify-between">
-            <input
-              class="w-[250px] h-[50px] bg-[#F5F1ED] outline-0 px-5 font-Lato font-light text-base"
-              type="text"
-              placeholder="Your Name*"
-            />
-            <input
-              class="w-[250px] h-[50px] bg-[#F5F1ED] outline-0 px-5 font-Lato font-light text-base"
-              type="email"
-              placeholder="Your Email*"
-            />
-          </div>
-          <button
-            class="w-[100px] h-[50px] font-Lato font-light text-base text-[#343434] justify-self-start border border-[#343434] tracking-wider"
-          >
-            SEND
-          </button>
+  <iframe class="w-full"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.6450944064286!2d106.83211851530447!3d-6.17823956226093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f4330fc1f097%3A0x380210b0f3ed4996!2sVocational%20High%20School%20State%202%20of%20Central%20Jakarta!5e0!3m2!1sen!2sid!4v1655107682676!5m2!1sen!2sid"
+    width="1440" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  <div class="flex w-full justify-center p-14 gap-5">
+    <form action="#">
+      <div class="flex flex-col gap-4 ">
+        <textarea class="p-5 w-[521px] h-[150px] bg-[#F5F1ED] resize-none outline-0 font-Lato font-light text-base"
+          type="text" placeholder="Message..."></textarea>
+        <div class="flex justify-between">
+          <input class="w-[250px] h-[50px] bg-[#F5F1ED] outline-0 px-5 font-Lato font-light text-base" type="text"
+            placeholder="Your Name*" />
+          <input class="w-[250px] h-[50px] bg-[#F5F1ED] outline-0 px-5 font-Lato font-light text-base" type="email"
+            placeholder="Your Email*" />
         </div>
-      </form>
-      <div class="">
-        <h1 class="font-Noto text-4xl">Hubungi Kita</h1>
-        <hr class="w-[100px]  border-black mt-5" />
-        <div class="flex flex-col gap-4 mt-5">
-          <a href="#" class="flex gap-2 items-center">
-            <img src="img/ig.svg" alt="" />
-            <p class="font-Lato text-base text-[#3F3F3F]">@perpustakaankita</p>
-          </a>
-          <a href="#" class="flex gap-2 items-center">
-            <img src="img/wa.svg" alt="" />
-            <p class="font-Lato text-base text-[#3F3F3F]">0812-3456-7890</p>
-          </a>
-          <a href="#" class="flex gap-2 items-center">
-            <img src="img/gmail.svg" alt="" />
-            <p class="font-Lato text-base text-[#3F3F3F]">
-              perpustakaankita@gmail.com
-            </p>
-          </a>
-        </div>
+        <button
+          class="w-[100px] h-[50px] font-Lato font-light text-base text-[#343434] justify-self-start border border-[#343434] tracking-wider">
+          SEND
+        </button>
+      </div>
+    </form>
+    <div class="">
+      <h1 class="font-Noto text-4xl">Hubungi Kita</h1>
+      <hr class="w-[100px]  border-black mt-5" />
+      <div class="flex flex-col gap-4 mt-5">
+        <a href="#" class="flex gap-2 items-center">
+          <img src="img/ig.svg" alt="" />
+          <p class="font-Lato text-base text-[#3F3F3F]">@perpustakaankita</p>
+        </a>
+        <a href="#" class="flex gap-2 items-center">
+          <img src="img/wa.svg" alt="" />
+          <p class="font-Lato text-base text-[#3F3F3F]">0812-3456-7890</p>
+        </a>
+        <a href="#" class="flex gap-2 items-center">
+          <img src="img/gmail.svg" alt="" />
+          <p class="font-Lato text-base text-[#3F3F3F]">
+            perpustakaankita@gmail.com
+          </p>
+        </a>
       </div>
     </div>
+  </div>
 
-    <footer
-      class="mt-14 h-20 bg-[#eaeaea] flex items-center justify-center font-mono text-lg"
-    >
-      made with ♥ by Kita.
-    </footer>
-    <script src="script.js"></script>
-  </body>
+  <footer class="mt-14 h-20 bg-[#eaeaea] flex items-center justify-center font-mono text-lg">
+    made with ♥ by Kita.
+  </footer>
+  <script src="script.js"></script>
+</body>
+
 </html>
